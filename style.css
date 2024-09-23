@@ -54,7 +54,7 @@ Table of contents
 	--black: #000000;
 	--dark: #1c1c1c;
 	--white: #ffffff;
-	--color-primary: #DF0A0A;
+	--color-primary: #3bdd71;
 	--color-secondary: #0b57e3;
 	--color-optional: #57B33E;
 	--color-heading: #0e0e0e;
@@ -66,7 +66,7 @@ Table of contents
 	--bg-gradient: linear-gradient(90deg, var(--color-secondary)  0%, var(--color-primary) 100%);
 	--bg-gradient-secondary: linear-gradient(90deg, var(--color-secondary)  40%, var(--dark-secondary) 100%);
 	--bg-gradient-reverse: linear-gradient(90deg, var(--color-primary)  0%, var(--color-secondary) 100%);
-	--gradient-bg: linear-gradient(90deg, #DF0A0A  0%, #930707 100%);
+	--gradient-bg: linear-gradient(90deg, #3cda76  0%, #34ab53 100%);
 	--bg-gradient-optional: linear-gradient(90deg, #57B33E  50%, #b59f11 100%);
 }
 
@@ -296,8 +296,8 @@ h6 {
 }
 
 .bg-gradient {
-    background: rgb(179,19,25);
-background: linear-gradient(97deg, rgba(179,19,25,1) 44%, rgba(226,42,49,1) 100%);
+    background: rgb(60, 191, 113);
+background: linear-gradient(97deg, rgb(93, 198, 111) 44%, rgb(62, 180, 137) 100%);
 }
  .shadow {
      position: relative;
@@ -877,7 +877,7 @@ background: linear-gradient(97deg, rgba(179,19,25,1) 44%, rgba(226,42,49,1) 100%
 }
 
 .site-heading h2::before {
-  background: #FF1949 none repeat scroll 0 0;
+  background: #38ae7b none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -888,7 +888,7 @@ background: linear-gradient(97deg, rgba(179,19,25,1) 44%, rgba(226,42,49,1) 100%
 }
 
 .site-heading h2::after {
-  background: #FF1949 none repeat scroll 0 0;
+  background: #46d4a5 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
