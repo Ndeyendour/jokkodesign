@@ -1,7 +1,7 @@
 /* ===================================================================
     
     Author          : Valid Theme
-    Template Name   : Sofol - Corporate Business Template
+    Template Name   : 
     Version         : 1.0
     
 * ================================================================= */
