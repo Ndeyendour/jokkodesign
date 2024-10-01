@@ -28,6 +28,16 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
+     <style>
+        .alert-msg.success {
+    color: green;
+}
+
+.alert-msg.error {
+    color: red;
+}
+
+     </style>
 
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -40,16 +50,15 @@
     
 
     <!-- Start Header Top 
-    ============================================= -->
-    <div class="top-bar-area bg-dark text-light">
+    <div class="top-bar-area text-light" style="background-color: #2c3e50;">
         <div class="container">
             <div class="topbar-info">
                 <div class="row">
                     <div class="top-address col-lg-8">
                         <ul>
-                            <li><i class="icon_phone"></i>011 334886</li>
-                            <li><i class="icon_mail"></i>info@yoursite.com</li>
-                            <li><i class="icon_pin"></i>62 Yukon Street, USA</li>
+                            <li><i class="icon_phone"></i>+221768446591 - +221756410361</li>
+                            <li><i class="icon_mail"></i>jokkotechs@gmail.com</li>
+                            <li><i class="icon_pin"></i>Dakar,Senegal</li>
                         </ul>
                     </div>
                     <div class="topbar-social col-lg-4">
@@ -72,14 +81,14 @@
             </div>
         </div>
     </div>
-    <!-- End Header Top -->
+
 
     <!-- Header 
     ============================================= -->
     <header>
         <!-- Start Navigation -->
         <nav class="navbar mobile-sidenav navbar-style-one attr-border navbar-sticky navbar-default validnavs on no-full">
-
+    
             <!-- Start Top Search -->
             <div class="top-search">
                 <div class="container-xl">
@@ -91,80 +100,62 @@
                 </div>
             </div>
             <!-- End Top Search -->
-
+    
             <div class="container d-flex justify-content-between align-items-center">
-
+    
                 <!-- Start Header Navigation -->
-                <div class="navbar-header">
+                <div class="navbar-header d-flex align-items-center">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/log.png" class="logo" alt="Logo"></a>
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/log.png" class="logo" alt="Logo">
+                    </a>
+                    <!-- Nom de l'entreprise -->
+                    <span class="company-name" style="margin-left: 2px; font-size: 40px; font-weight: bold;">
+                        JOKKO TECH
+                    </span>
                 </div>
                 <!-- End Header Navigation -->
-
+    
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <div class="collapse-header">
                         <img src="assets/img/log.png">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"    data-target="#navbar-menu">
-                        <i class="fa fa-times fa-bars"></i>
-                    </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-times fa-bars"></i>
+                        </button>
                     </div>
                     
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        
-                        <li>
-                            <a href="about.html">Accueil</a>
+                        <li class="dropdown">
+                            <a href="index.html">Accueil</a>
                         </li>
-                        <li></li>
-                            <a href="about.html">A propos</a>
+                        <li>
+                            <a href="about.html">À propos</a>
                         </li>
                         <li>
                             <a href="services.html">Services</a>
                         </li>
-                        <!-- <li>
-                            <a href="team.html">Team</a>
-                        </li> -->
                         <li>
                             <a href="projects.html">Projets</a>
                         </li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="single.html">Blog Details</a></li>
-                                <li><a href="single-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                            </ul>
-                        </li> -->
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="404.html">Error 404</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="team.html">Team</a></li>
-                            </ul>
-                        </li> -->
                         <li>
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
-                </div><!-- /.navbar-collapse --><!-- /.navbar-collapse -->
-
-
-            </div> 
-
-
+                </div><!-- /.navbar-collapse -->
+    
+            </div>
+    
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
             <!-- End Overlay screen for menu -->
             
         </nav>
         <!-- End Navigation -->
-
+    
     </header>
     <!-- End Header -->
 
@@ -188,34 +179,45 @@
 
     <!-- Start Contact 
     ============================================= -->
-    <div class="contact-info-area default-padding bottom-less">
+    <div id="contact" class="contact-info-area default-padding bottom-less">
         <div class="container">
             <div class="contact-items">
-                <div class="contact-info text-center">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 item">
-                            <i class="icon_pin"></i>
-                            <h4>location</h4>
-                            <p>
-                               Bashundhara City, Block-D <br>
-                               51, Al Bastakiya
-                            </p>
+                <div class="row">
+                    <!-- Subscription Section -->
+                    <div class="col-lg-12 subscribe">
+                        <div class="subscribe-box bg-gray">
+                            <div class="row">
+                                
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6  item">
-                            <i class="icon_mail"></i>
-                            <h4>Email</h4>
-                            <p>
-                               Get support via email  <br>
-                               info@yourdomain.com
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-md-6  item">
-                            <i class="icon_phone"></i>
-                            <h4>Phone</h4>
-                            <p>
-                               Any time. We are open 24/7<br>
-                               +66 565-4566-3467 
-                            </p>
+                    </div>
+                    <!-- Contact Info Section -->
+                    <div class="contact-info text-center col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 item">
+                                <i class="icon_pin"></i>
+                                <h4>Emplacement</h4>
+                                <p>
+                                   Rufisque,  <br>
+                                   Dakar, Senegal
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 item">
+                                <i class="icon_mail"></i>
+                                <h4>Email</h4>
+                                <p>
+                                   Obtenez de l'aide par e-mail <br>
+                                   jokkotechs@gmail.com
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 item">
+                                <i class="icon_phone"></i>
+                                <h4>Téléphone</h4>
+                                <p>
+                                   Disponible 24/7<br>
+                                   +221768446591 - +221756410361
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,7 +244,8 @@
         </div>
         <div class="row">
             <div class="col-lg-6 contact-form">
-                <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="d576922e-94fa-40d5-a1e0-9335259ad4c5">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
@@ -289,7 +292,7 @@
             </div>
             <div class="col-lg-6 maps">
                 <div id="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7718.168533310172!2d-17.46398903284752!3d14.70782646954529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec19fc137980b03%3A0x2f17ba47ed9b2b44!2sRufisque!5e0!3m2!1sfr!2ssn!4v1727786206282!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -303,9 +306,33 @@
     ============================================= -->
     <footer class="default-padding text-light">
         <div class="container">
-            <div class="f-items fv1">
+            <div class="f-items">
                 <div class="row">
-                    <!-- About Section -->
+                    <!-- Logo Section -->
+                    <div class="col-lg-4 col-md-12 item text-center">
+                        <div class="f-item">
+                            <a href="#">
+                                <img src="assets/img/log.png" alt="Votre Logo" style="width: 400px;">
+                            </a>
+                            <p class="mt-3">L'innovation au cœur de votre transformation digitale.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Liens Utiles Section -->
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <h4>Liens Utiles</h4>
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="about.html">À propos</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="projects.html">Projets</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- À propos Section -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item">
                             <h4>À propos</h4>
@@ -314,136 +341,33 @@
                             </p>
                             <div class="address">
                                 <ul>
-                                    <li><i class="icon_house"></i> <span><a href="http://www.validtheme.com" target="_blank">www.validtheme.com</a></span></li>
-                                    <li><i class="icon_mail"></i> <span><a href="mailto:support@validtheme.com">support@validtheme.com</a></span></li>
-                                    <li><i class="icon_pin"></i> <span>123 6th St., Melbourne, FL 32904</span></li>
+                                    <li><i class="icon_house"></i> <span><a href="http://www.votre-site.com" target="_blank">jokkotech.com</a></span></li>
+                                    <li><i class="icon_mail"></i> <span><a href="mailto:jokkotechs@gmail.com">jokkotechs@gmail.com</a></span></li>
+                                    <li><i class="icon_pin"></i> <span>Dakar, Senegal</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Recent Posts Section -->
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item recent-post">
-                            <h4>Articles Récents</h4>
-                            <ul>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="assets/img/thumb/1.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">Participer aux réunions du personnel pour une gestion efficace</a>
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Fév, 2018</span> | Par <a href="#">Auteur</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="assets/img/thumb/2.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">Plan et stratégie futurs pour la construction</a>
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Fév, 2018</span> | Par <a href="#">Auteur</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="assets/img/thumb/3.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">Alteration particulière de Devonshire</a>
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Fév, 2018</span> | Par <a href="#">Auteur</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Instagram Feed Section -->
-                    <div class="col-lg-4 col-md-12 item">
-                        <div class="f-item instagram-feed">
-                            <h4>Feed Instagram</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/5.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 12
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/6.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 8
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/7.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 3
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/8.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 12
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/9.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 4
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/thumb/10.jpg" alt="thumb">
-                                        <span class="overlay">
-                                            <i class="fa fa-heart"></i> 9
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <!-- Start Footer Bottom -->
+    
+            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <div class="row align-center">
                     <div class="col-lg-6">
-                        <p>&copy; 2024 Tous droits réservés</p>
+                        <p>&copy; 2024 jokkotech</p>
                     </div>
                     <div class="col-lg-6 text-end">
-                        <p>Design &amp; Développement par <a href="#">ValidTheme</a></p>
+                        <p>Développé par <a href="#">jokkotech</a></p>
                     </div>
                 </div>
             </div>
-            <!-- End Footer Bottom -->
         </div>
     </footer>
     
     <!-- End Footer -->
     <!-- End Footer -->
-
+    
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>

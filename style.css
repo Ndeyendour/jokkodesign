@@ -2853,7 +2853,7 @@ footer .info .meta-title a {
      width: 100%;
      height: 100%;
      z-index: 999999;
-     background: url(assets/img/preloader.gif) center no-repeat #fff;
+     background: url(assets/img/) center no-repeat #fff;
      text-align: center;
 }
 
